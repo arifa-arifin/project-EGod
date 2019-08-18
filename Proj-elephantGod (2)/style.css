@@ -1,0 +1,455 @@
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    background: tomato;
+  }
+  
+  .footer {
+    background: lightgreen;
+  }
+  
+  .main {
+    text-align: left;
+    background: deepskyblue;
+  }
+  
+  .aside-1 {
+    background: gold;
+  }
+  
+  .aside-2 {
+    background: hotpink;
+  }
+  
+
+.logo{border-radius: 50%;
+    width: 40px;
+    height: 40px
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+
+.zone {
+    /*padding:30px 50px;*/
+    /*cursor:pointer;*/
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+.fa-search{
+    width:35rem;
+    height: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border-radius: 2;
+}
+
+/***********************************************************************
+ *  Nav Bar
+ **********************************************************************/
+
+
+  .flexmenu {
+    width: 100%;
+    color: black;
+    line-height: 1.4em;
+    background-color: #fff;
+    border-color: #e7e7e7;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(0,0,0,.08);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.08);
+  }
+  .flex-m{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.5em;
+  }
+
+  .flex-sub {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: solid gray .5px;
+  }
+
+  .sub-icon{
+      width: 20px;
+      height: auto;
+  }
+
+  .menu {
+    display: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 8%;
+    font-weight: bold;
+  }
+  .menu:first-child {
+    display: inline-flex;
+    justify-content: left;
+    width: 80%;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .menu a {
+    color: black;
+    text-decoration: none;
+    padding:0 0.5em;
+  }
+  .menu:nth-child(n+2):hover {
+    background-color: #c0c0c0;
+    color: #000;
+    border-radius: 0.5em;
+  }
+  .mobile-menu {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    width: 1.2em;
+  }
+  .menu-icon {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: inline-flex;
+  }
+
+  .logo{
+      width: 20px;
+      height: 20px;
+  
+  }
+
+  @media screen and (max-width:768px)               /*******For mobile veiw*********/
+  { 
+    .tab, .search-box, .filter, .activities {
+      display:none;
+    }
+
+    .notification{
+      align-content: center;
+      }
+
+    html, body{
+      font-size:16px;
+    }  
+
+    }
+
+
+
+
+  @media screen and (min-width: 768px)             /*******For desktop veiw*********/
+  { 
+    .mobile-menu {
+      display: none;
+    }
+    .flex-m {
+      flex-direction: row;
+    }
+
+    .flex-search{
+      display: flex; 
+    }
+
+    .search-box{
+      flex: 1 ;
+      justify-content: space-around;
+    }
+
+    .menu {
+      display: inline-flex;
+      align-items: center;
+      width: 3rem;
+      font-weight: bold;
+    }
+    .flex-sub{
+        display: none;
+    }
+
+
+  .notification{
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 1rem;
+  }
+
+  body{
+    margin-right: 4rem;
+    margin-left: 4rem; 
+  }
+
+  }
+  
+
+
+/***********************************************************************
+ *  Cover
+ **********************************************************************/
+
+/***********************************************************************
+ *  Grid Panel
+ **********************************************************************/
+
+
+/***********************************************************************
+ *  Footer
+ **********************************************************************/
+
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+
+}
+
+/***********************************************************************
+ *  Home Body
+ **********************************************************************/
+ 
+ .wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+    margin-top: 2rem;
+  }
+
+  
+
+  .header-note{
+    border: solid black;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+/* 
+  .notification > * {
+    flex: 1;
+  } */
+
+  .filter{
+    padding: 1rem;
+    margin: 0;
+   flex: 0px;
+   border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(102,45,145,.15);
+    box-shadow: 0 1px 2px 0 rgba(102,45,145,.15);
+    -webkit-box-flex: 1;
+    flex: 1;
+    -ms-flex: 1;
+    width: 100%;
+    -webkit-flex: 1;
+    min-width: 285px;
+    max-width: 285px;
+    margin-right: 15px;
+    max-height: 14rem;
+  }
+  
+.check-form{
+  line-height: 2rem;
+}
+
+  input[type="checkbox" i] {
+    margin-left: 10rem;
+}
+
+  .middle{
+    -ms-flex: 1;
+    width: 100%;
+    -webkit-flex: 1;
+    flex-direction: column;
+  }
+
+  .box{background-color: #fff;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(102,45,145,.15);
+    box-shadow: 0 1px 2px 0 rgba(102,45,145,.15);
+    -webkit-box-flex: 1;
+    padding: .5rem;
+  }
+
+  .row-2{
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(102,45,145,.15);
+    box-shadow: 0 1px 2px 0 rgba(102,45,145,.15);
+    -webkit-box-flex: 1;
+    padding: .5rem;
+  }
+
+  .box2{
+    background-color: lightsteelblue;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(102,45,145,.15);
+    box-shadow: 0 1px 2px 0 rgba(102,45,145,.15);
+    -webkit-box-flex: 1;
+    margin-top: 1rem;
+  }
+
+  .activities{
+    padding: 1rem;
+    flex: 1;
+    -ms-flex: 1;
+    width: 100%;
+    -webkit-flex: 1;
+    max-width: 285px;
+    min-width: 285px;
+    margin-left: 15px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(102,45,145,.15);
+    box-shadow: 0 1px 2px 0 rgba(102,45,145,.15);
+    -webkit-box-flex: 1;
+    flex: 1;
+    -ms-flex: 1;
+    width: 100%;
+    -webkit-flex: 1;
+    min-width: 285px;
+    max-width: 285px;
+    margin-left: 15px;
+  }
+
+.act-list{
+  list-style: none;
+  padding: 0;
+}
+
+.act{
+  margin-top: 0;
+  border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.user-info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem; 
+}
+
+.client{
+  display: flex;
+  flex-flow: column;
+  float: right;
+  align-items: flex-start;
+}
+
+.list1{
+  border-bottom: solid rgba(102,45,145,.15) 1px;
+  padding: 1rem;
+}
+
+.pictures-row{
+  display: flex;
+  padding: 1rem;
+}
+
+
+.pic-row {
+  flex-direction: row;
+  margin-right: 1rem;
+  width: 50px;
+  height: 40px;
+  border: solid gray 1px;
+  margin-top: -20px;
+}
+
+.row-pic{
+  margin-left: -4rem;
+}
+
+.details-container {
+  flex: 2;
+}
+
+.avatar-container {
+    margin: auto;
+    padding: 1rem;
+  flex-basis: 35px;
+  margin-top: 0px;
+}
+
+.text{
+  margin-top: -1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-2{
+  border: solid lightgrey .5px;
+  border-width: 100%;
+}
+
+.btn{margin-top: 0;
+  margin-left: -2rem;
+}
+
+.sub{
+  margin-top: -15px;
+  color: gray;
+  font-weight: 1;
+}
+
+/* @media all and (min-width: 600px) {
+  .notification {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+/* @media all and (max-width:768px){
+
+html,body{
+  font-size: 1rem;
+  margin: 0;
+}
+
+.middle{
+  flex-direction: column;
+}
+
+.filter, .box , .activities{
+  display:none;
+}
+
+} *
